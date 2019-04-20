@@ -22,7 +22,9 @@
   "bugs": {
     "url": "https://github.com/robertoachar/playground-koa/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "winston": "3.2.1"
+  },
   "devDependencies": {
     "eslint": "5.16.0",
     "eslint-config-airbnb-base": "13.1.0",

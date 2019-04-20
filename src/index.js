@@ -1,1 +1,3 @@
-console.log('Hello Nodemon');
+const logger = require('./logger');
+
+logger.info('Hello Logger');
