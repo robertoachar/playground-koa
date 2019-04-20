@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "lint": "eslint src/**/*.js",
-    "start": "node src/index.js"
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "eslint-config-prettier": "4.1.0",
     "eslint-plugin-import": "2.17.2",
     "eslint-plugin-prettier": "3.0.1",
+    "nodemon": "1.18.11",
     "prettier": "1.17.0"
   },
   "license": "MIT"
