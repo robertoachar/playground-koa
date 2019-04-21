@@ -10,4 +10,12 @@ router.get('/json', async (ctx) => {
   ctx.body = { message: 'Hello Koa' };
 });
 
+router.get('/error', async () => {
+  const error = new Error();
+  error.name = 'Whoops';
+  error.message = 'Whoops error message';
+
+  throw error;
+});
+
 module.exports = router;
