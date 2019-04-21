@@ -16,6 +16,12 @@ router.post('/hello', async (ctx) => {
   ctx.body = { message: `Hello ${name}` };
 });
 
+router.put('/user/:id', async (ctx) => {
+  const { id } = ctx.params;
+
+  ctx.body = { id };
+});
+
 router.get('/error', async () => {
   const error = new Error();
   error.name = 'Whoops';
