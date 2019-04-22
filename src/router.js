@@ -10,16 +10,16 @@ router.get('/json', async (ctx) => {
   ctx.body = { message: 'Hello Koa' };
 });
 
+router.get('/user/:id', async (ctx) => {
+  const { id } = ctx.params;
+
+  ctx.body = { id };
+});
+
 router.post('/hello', async (ctx) => {
   const { name } = ctx.request.body;
 
   ctx.body = { message: `Hello ${name}` };
-});
-
-router.put('/user/:id', async (ctx) => {
-  const { id } = ctx.params;
-
-  ctx.body = { id };
 });
 
 router.get('/throw', async () => {
