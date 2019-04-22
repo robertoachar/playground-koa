@@ -37,15 +37,15 @@ PORT = 3000
 
 ## Endpoints
 
-| Endpoint         | Description               |
-| ---------------- | ------------------------- |
-| GET `/`          | Get plain text data       |
-| GET `/json`      | Get JSON Data             |
-| GET `/user/:id`  | Get data with params      |
-| POST `/hello`    | POST data                 |
-| GET `/not-found` | 404 Not found             |
-| GET `/throw`     | 422 Unprocessable Entity  |
-| GET `/error`     | 500 Internal Server Error |
+| Method | Endpoint     | Description               |
+| ------ | ------------ | ------------------------- |
+| GET    | `/`          | Get plain text data       |
+| GET    | `/json`      | Get JSON Data             |
+| GET    | `/user/:id`  | Get data with params      |
+| POST   | `/hello`     | POST data                 |
+| GET    | `/not-found` | 404 Not found             |
+| GET    | `/throw`     | 422 Unprocessable Entity  |
+| GET    | `/error`     | 500 Internal Server Error |
 
 ## Author
 
