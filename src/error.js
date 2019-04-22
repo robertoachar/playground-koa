@@ -5,14 +5,14 @@ const error = async (ctx, next) => {
     logger.error(`${err.name} - ${err.message}`);
 
     switch (err.name) {
-      case 'Whoops':
+      case 'Error':
         ctx.status = 422;
-        ctx.body = err.message;
+        ctx.body = { message: err.message };
         break;
 
       default:
         ctx.status = 500;
-        break;
+        ctx.body = { message: 'Something is broken' };
     }
   });
 };

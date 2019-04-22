@@ -22,12 +22,14 @@ router.put('/user/:id', async (ctx) => {
   ctx.body = { id };
 });
 
-router.get('/error', async () => {
-  const error = new Error();
-  error.name = 'Whoops';
-  error.message = 'Whoops error message';
+router.get('/throw', async () => {
+  throw new Error('BOOM!');
+});
 
-  throw error;
+router.get('/error', async (ctx) => {
+  const value = undefined;
+
+  ctx.body = value.toString();
 });
 
 module.exports = router;
