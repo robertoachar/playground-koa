@@ -1,9 +1,9 @@
-const Koa = require('koa');
-const bodyParser = require('koa-bodyparser');
-const helmet = require('koa-helmet');
+import Koa from 'koa';
+import bodyParser from 'koa-bodyparser';
+import helmet from 'koa-helmet';
 
-const error = require('./error');
-const router = require('./router');
+import error from './error';
+import router from './router';
 
 const app = new Koa();
 app.use(helmet());
@@ -11,4 +11,4 @@ app.use(bodyParser());
 app.use(error);
 app.use(router.routes());
 
-module.exports = app;
+export default app;

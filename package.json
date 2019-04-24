@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "dotenv": "7.0.0",
+    "esm": "3.2.22",
     "koa": "2.7.0",
     "koa-bodyparser": "4.2.1",
     "koa-helmet": "4.1.0",

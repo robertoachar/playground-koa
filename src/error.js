@@ -1,4 +1,4 @@
-const logger = require('./logger');
+import logger from './logger';
 
 const error = async (ctx, next) => {
   return next().catch((err) => {
@@ -17,4 +17,4 @@ const error = async (ctx, next) => {
   });
 };
 
-module.exports = error;
+export default error;

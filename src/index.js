@@ -1,7 +1,4 @@
-const app = require('./app');
-const config = require('./config');
-const logger = require('./logger');
+/* eslint no-global-assign: 0 */
 
-app.listen(config.PORT, () => {
-  Object.keys(config).map((key) => logger.info(`${key}: ${config[key]}`));
-});
+require = require('esm')(module);
+module.exports = require('./server');

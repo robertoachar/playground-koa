@@ -32,4 +32,4 @@ router.get('/error', async (ctx) => {
   ctx.body = value.toString();
 });
 
-module.exports = router;
+export default router;
